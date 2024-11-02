@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenClean - Authentication</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/authPage.css">
+</head>
+<body>
+    <!-- Placeholder for Navbar -->
+    <div id="navbar-placeholder"></div>
+    
+    <main class="auth-main">
+        <div class="auth-box">
+            <h2 id="auth-title">Login</h2>
+            <form id="auth-form" class="auth-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="auth-button">Submit</button>
+            </form>
+            <p class="toggle-text">
+                <a href="#" id="toggle-link">Don't have an account? Sign up</a>
+            </p>
+            <div id="notification" class="notification"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 GreenClean. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/authPage.js"></script>
+</body>
+</html>

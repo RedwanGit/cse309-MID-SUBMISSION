@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/profilePage.css">
+    <title>GreenClean - Profile</title>
+</head>
+<body>
+    <!-- Placeholder for Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <div class="auth-container">
+            <div class="auth-box">
+                <h2>Profile Information</h2>
+                <form id="profileForm">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password">
+                    </div>
+                    <button type="submit" class="auth-button">Update Profile</button>
+                </form>
+                <div class="notification" id="notification">Profile updated successfully!</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 GreenClean. All rights reserved.</p>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script src="profilePage.js"></script>
+</body>
+</html>

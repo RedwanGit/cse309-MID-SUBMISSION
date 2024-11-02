@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenClean - Products</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/productPage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+</head>
+<body>
+    <!-- Placeholder for Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <main class="main" role="main">
+        <section class="products-section">
+            <div class="container">
+                <h1 class="page-title">Our Products</h1>
+                <!-- Category Selection Dropdown -->
+                <div class="category-selection">
+                    <label for="category">Choose Category:</label>
+                    <select id="category" name="category">
+                        <option value="all">View All</option>
+                        <option value="household">Household Cleaning</option>
+                        <option value="personal">Personal Care</option>
+                    </select>
+                </div>
+                <div id="products-grid" class="products-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 GreenClean. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/productPage.js"></script>
+</body>
+</html>

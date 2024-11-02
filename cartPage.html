@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your shopping cart at GreenClean - Review and checkout your eco-friendly cleaning products">
+    <title>GreenClean - Shopping Cart</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cartPage.css">
+</head>
+<body>
+    <!-- Placeholder for Navbar -->
+    <div id="navbar-placeholder" role="navigation" aria-label="Main navigation"></div>
+
+    <main class="main" role="main">
+        <div class="cart-section">
+            <h1 class="page-title">Your Shopping Cart</h1>
+            
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                                <img src="images/products/all-purpose.webp" alt="All-Purpose Cleaner" class="product-image">
+                                <span class="product-name">All-Purpose Cleaner</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="quantity-controls" role="group" aria-label="Quantity controls for All-Purpose Cleaner">
+                                <button class="quantity-btn" onclick="decreaseQuantity(1)">−</button>
+                                <input type="number" id="quantity-input-1" class="quantity-input" value="1" min="1" readonly>
+                                <button class="quantity-btn" onclick="increaseQuantity(1)">+</button>
+                            </div>
+                        </td>
+                        <td><span class="current-price">$12.99</span></td>
+                        <td>
+                            <button class="remove-btn" aria-label="Remove item">×</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <div class="cart-summary">
+                <div class="summary-item">
+                    <span>Subtotal</span>
+                    <span class="subtotal-amount">$12.99</span>
+                </div>
+                <div class="summary-item">
+                    <span>Shipping</span>
+                    <span class="shipping-amount">$5.00</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total</span>
+                    <span class="total-amount">$17.99</span>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+
+            <!-- Empty cart message -->
+            <div class="empty-cart-message" hidden>
+                <p>Your cart is empty</p>
+                <a href="/products" class="continue-shopping">Continue Shopping</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p class="footer-text">&copy; 2024 GreenClean. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/navbar.js"></script>
+    <script src="js/cartPage.js"></script>
+</body>
+</html>
